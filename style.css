@@ -441,7 +441,7 @@ main {
 .security-content{
 	display: grid;
 	grid-template: 1fr / 422px 450px 400px;
-	font-weight: 200;
+	font-weight: 400;
 	margin-left: 100px;
 	justify-content: center;
 	position: absolute;
@@ -478,7 +478,7 @@ main {
 }
 
 
-.security-imgs{
+.secur_img{
 	float: left;
 }
 
