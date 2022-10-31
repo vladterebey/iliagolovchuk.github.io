@@ -164,7 +164,7 @@ button {
 	transform: translate(0px, 3px);
 }
 
-.main {
+main {
 	height: 2387px;
 
 }
@@ -195,7 +195,7 @@ button {
 		letter-spacing: 0.5px;
 	}
 
-	.red-text {
+	.redtext {
 		color: #fc2028;
 	}
 
@@ -248,8 +248,8 @@ button {
 	.google-btn:hover,
 	.upgrade:hover,
 	.donate:hover,
-	.download-button.app-store-load:hover,
-	.download-button.google-load:hover{
+	.download.appstore-load:hover,
+	.download.google-load:hover{
 		box-shadow: 0 10px 20px 0px #6276cd;
 	}
 
@@ -292,7 +292,7 @@ button {
 	top: 917px;
 }
 
-.device{
+.laptop{
 	top:765px;
 	position: relative;
 	display: flex;
@@ -304,7 +304,7 @@ button {
 	justify-content: center;
 	align-items: center;
 }
-.device-content{
+.laptop-content{
 	height: 230px;
 	width: 450px;
 	margin: 14px 34px 0 0;
@@ -313,14 +313,14 @@ button {
 	z-index: 2;
 }
 
-.device-content>h2 {
+.laptop-content>h2 {
 	font-size: 37px;
 	font-weight: 200;
 	word-spacing: 1px;
 	letter-spacing: -0.32px;
 }
 
-.device-content>p {
+.laptop-content>p {
 	position: relative;
 	top: 8px;
 	right: 5px;
@@ -330,7 +330,7 @@ button {
 	line-height: 22px;
 }
 
-.device-btns {
+.laptop-btns {
 	position: relative;
 	top: 38px;
 	right: 1px;
@@ -341,13 +341,13 @@ button {
 	float: right;
 }
 
-.download-button {
+.download {
 	height: 55px;
 	background: red;
 	border-radius: 5px;
 }
 
-.app-store-load {
+.appstore-load {
 	background: url(img/app-store.png);
 }
 
@@ -368,7 +368,7 @@ button {
 	z-index: 0;
 }
 
-.device-content::after {
+.laptop-content::after {
 	content: "";
 	background: url(img/device.png);
 	width: 578px;
@@ -380,13 +380,13 @@ button {
 	z-index: -1;
 }
 
-.purchase-block {
+.buy-block {
 	padding-top: 52px;
 	padding-bottom: 200px;
 	background: linear-gradient(to bottom left, #fafafa, #ffffff);
 }
 
-.purchase-content:before {
+.buy-content:before {
 	content: "";
 	display: block;
 	height: 1px;
@@ -398,13 +398,13 @@ button {
 
 }
 
-.purchase-content {
+.buy-content {
 	max-width: 940px;
 	margin: 0 auto;
 	text-align: center;
 }
 
-.purchase-head>h2 {
+.buy-head>h2 {
 	margin-top: 2px;
 	color: #535353;
 	font-size: 36px;
@@ -413,7 +413,7 @@ button {
 	word-spacing: 0.15px;
 }
 
-.purchase-head>p {
+.buy-head>p {
 	margin-top: -9px;
 	color: #7c7c7c;
 	font-size: 29px;
@@ -422,7 +422,7 @@ button {
 	word-spacing: 0.2px;
 }
 
-.purchase-btns {
+.buy-btns {
 	display: grid;
 	grid-template: 1fr / 246px 166px;
 	justify-content: center;
@@ -430,7 +430,7 @@ button {
 	margin-top: 34px;
 }
 
-.purchase-btns>button {
+.buy-btns>button {
 	height: 56px;
 	border-radius: 10rem;
 	padding-bottom: 2px;
@@ -470,8 +470,8 @@ button {
 
 .ads-tex{
 	font-size: 14px;
-    font-weight: 400;
-	color: #b9b9b9; 
+    font-weight: 200;
+	color: #b9b9b9;
 	margin-top: 15px;
 	margin-right: 32px;
 	margin-left: 12px;
@@ -482,7 +482,7 @@ button {
 	float: left;
 }
 
-.learn-more-vert{
+.learn-vertical{
 	content: "";
 	width: 1px;
 	height: 432px;
@@ -492,7 +492,7 @@ button {
 	top: 917px;
 }
 
-.learn-more-hor{
+.learn-horizontal{
 	content: "";
 	width: 973px;
 	height: 1px;
@@ -502,7 +502,7 @@ button {
 	top: 1381px;
 }
 
-.learn-more-btn {
+.learn-more {
     background-color: white;
 	border-radius: 32px;
     border: 1px solid #b9b9b9;
@@ -518,7 +518,7 @@ button {
 	left: 973px;
 	top: 1351px;
 }
- .media-line{
+ .media-ln{
 	position: absolute;
 	top: 1452px;
 	left: 21px;
@@ -565,7 +565,7 @@ button {
     display: none;
 }
 
-.wrapper .controls {
+.wrapper .ctrl {
     display: grid;
     position: absolute;
     top: 0;
@@ -581,16 +581,16 @@ button {
     transition: all ease 0, 5s;
 }
 
-.controls label:nth-of-type(2),
-.controls label:nth-of-type(3) {
+.ctrl label:nth-of-type(2),
+.ctrl label:nth-of-type(3) {
     margin-top: 11px;
     margin-left: 1px;
 }
 
 .wrapper label:hover,
-#slide1:checked~.controls label:nth-of-type(1),
-#slide2:checked~.controls label:nth-of-type(2),
-#slide3:checked~.controls label:nth-of-type(3) {
+#slidefirst:checked~.ctrl label:nth-of-type(1),
+#slidesecond:checked~.ctrl label:nth-of-type(2),
+#slidethird:checked~.ctrl label:nth-of-type(3) {
     cursor: pointer;
     z-index: 1;
     background: #101010;
@@ -617,9 +617,9 @@ button {
     margin-left: 3px;
 }
 
-#slide1:checked~.slider>.slide1,
-#slide2:checked~.slider>.slide2,
-#slide3:checked~.slider>.slide3 {
+#slidefirst:checked~.slider>.slidefirst,
+#slidesecond:checked~.slider>.slidesecond,
+#slidethird:checked~.slider>.slidethird {
     opacity: 1;
     z-index: 1;
     transform: scale(1);
@@ -699,14 +699,14 @@ footer {
 
 	}
 
-	.footer-container {
+	.footer-cont {
 		width: 1400px;
 		border-top: 1px solid #b9b9b9;
 		font-size: 14px;
 		color: #5c5c5c;
 	}
 
-	.footer-container>p:not(.copyright) {
+	.footer-cont>p:not(.copyr) {
 		text-align: right;
 		color: #7a7a7a;
 		margin-right: 24px;
@@ -749,11 +749,11 @@ footer {
 		top: 2825px;
 	}
 
-	.footer-container .bold-text {
+	.footer-cont .bold-text {
 		font-family: TW-B;
 	}
 
-	.contact-list {
+	.contacts-list {
 		display: inline-block;
 		position: relative;
 		left: 220px;
@@ -763,41 +763,41 @@ footer {
 
 	}
 
-	.contact-list>ul>li {
+	.contacts-list>ul>li {
 		list-style: none;
 		margin-bottom: 0.5px;
 	}
 
-	.contact-list>ul>li a {
+	.contacts-list>ul>li a {
 		color: #5c5c5c;
 	}
 
-	.footer-container figure {
+	.footer-cont figure {
 		display: inline-block;
 		text-align: right;
 	}
 
-	.footer-container figure>figcaption {
+	.footer-cont figure>figcaption {
 		font-size: 18px;
 		margin-bottom: 23px;
 	}
 
-	.footer-container figure>ul>li>a {
+	.footer-cont figure>ul>li>a {
 		color: #5c5c5c;
 		text-decoration: none;
 	}
 
-	.footer-container figure>ul>li>a:hover {
+	.footer-cont figure>ul>li>a:hover {
 		cursor: pointer;
 		color: #fc2028;
 	}
 
-	.footer-container figure>ul>li {
+	.footer-cont figure>ul>li {
 		list-style: none;
 		margin-bottom: 1.5px;
 	}
 
-	.footer-container figure>ul>li::after {
+	.footer-cont figure>ul>li::after {
 		content: "•";
 		margin-left: 6px;
 	}
@@ -816,37 +816,37 @@ footer {
 		letter-spacing: 0.2px;
 	}
 
-	.neutron-mail-list {
+	.neutronmail-list {
 		position: relative;
 		top: 148px;
 		left: 829px;
 		letter-spacing: 0.2px;
 	}
 
-	.social-list {
+	.socialmedia-list {
 		font-size: 12px;
 		position: relative;
 		top: 222px;
 		left: 201px;
 	}
 
-	.social-list>a {
+	.socialmedia-list>a {
 		color: #5c5c5c;
 		text-decoration: underline;
 		text-decoration-color: #dedede;
 	}
 
-	.social-list>a:hover {
+	.socialmedia-list>a:hover {
 		color: #fc2028;
 		text-decoration-color: #fc2028;
 	}
 
-	.social-list .footer-slash {
+	.socialmedia-list .slashfooter {
 		margin-left: 10px;
 		margin-right: 10px;
 	}
 
-	.copyright {
+	.copyr {
 		display: inline-block;
 		font-size: 12px;
 		letter-spacing: 0.1px;
