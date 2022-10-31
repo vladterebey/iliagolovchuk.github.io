@@ -195,7 +195,7 @@ main {
 		letter-spacing: 0.5px;
 	}
 
-	.redtext {
+	.red-text {
 		color: #fc2028;
 	}
 
@@ -441,7 +441,7 @@ main {
 .security-content{
 	display: grid;
 	grid-template: 1fr / 422px 450px 400px;
-	font-weight: 400;
+	font-weight: 200;
 	margin-left: 100px;
 	justify-content: center;
 	position: absolute;
@@ -478,7 +478,7 @@ main {
 }
 
 
-.secur_img{
+.secur-img{
 	float: left;
 }
 
