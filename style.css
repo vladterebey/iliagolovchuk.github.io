@@ -133,7 +133,7 @@ button {
 	box-shadow: 0 10px 20px 0px #6276cd;
 }
 
-.language-list {
+.languages {
 	font-size: 14px;
 	color: #959595;
 	transition: 0.2s all ease;
@@ -147,15 +147,15 @@ button {
 }
 
 
-.language-list>input {
+.languages>input {
 	display: none;
 }
 
-.language-list label:hover,
-#language-list1:checked+label,
-#language-list2:checked+label,
-#language-list3:checked+label,
-#language-list4:checked+label {
+.languages label:hover,
+#language-1:checked+label,
+#language-2:checked+label,
+#language-3:checked+label,
+#language-4:checked+label {
 	cursor: pointer;
 	letter-spacing: 0.8px;
 	transition: 0.2s all ease;
